@@ -1,0 +1,53 @@
+#Introduction to node.js
+what is node?
+---------------------------------
+it is an event driven non -blincking i/o *server that is asychronious in nature.
+it is wriitten using Javascript.
+
+##Quick it how it works in a nutshell
+1.Node receives events
+2.it stashes them in an event que.
+3.the events are then pushed to athread pool for processing
+4.once athread is done ,it communicates it's results back to node.
+
+
+##concepts
+-event driven
++  // node syntax 
+-Non-blocking
+		+ In procedural language ,any heavy and time consuming operations will be run in aseparate  thread fromthe main one.
+		+Node provides us with the ability to write our code using an synchronpus and event driven where callbacks are ran when events are received.
+		+This gives us the ability to have multiple  i/o operations within a single thread and not have them 'block'(wait for the previous processto run before executing the main process).
+-asynchronious
+		-Node uses anon -procedural style of comput
+		-it allows code to be executed in no part in order where the previous operation dies not have to finish before the next one again. 
+-eventloop
+-Thread
+	+ when a code is running in acompiler .The compiler creates a main process  within which it will execute your code.this process is known as the thread.
+
+
+	## Common syntax used in Node
+	2.Importing packages and files into your main file
+
+	''''''
+	this imports a natively defined node.js package required('http');
+	This imports a node js package defined in the node_modules 
+	//folder within your apps directory
+
+	//in the foldeer where the js file is defined run node index.
+	var http=reguire ('http');
+
+	reguire(' ./http');
+	reguire('./http')
+
+	we use the reguire fuction to export modules defined in other files into our main file.
+
+
+	3.staring a node project
+	''''''''''
+	
+
+4.adding amodule to your project using npm
+''''''''''
+//run this in the terminal within your app directory 
+npm install ---save <module_name>
