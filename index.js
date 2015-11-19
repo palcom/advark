@@ -73,7 +73,7 @@ app.get('/movies',function(req, res){
 		res.json(movies);
 	
 	}	
-	});
+	}); 
 
 	});
 	//movies= [ 
